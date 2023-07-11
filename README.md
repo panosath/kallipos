@@ -6,7 +6,7 @@ the markdown version of the book.
 
 Files are edited at their respective repos and then imported here:
 
-After cloningn this repo run: `git submodule update --init --recursive`
+After cloning this repo run: `git submodule update --init --recursive`
 
 After editing a file in a submodule run: `git submodule update --remote --merge`
 

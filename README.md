@@ -6,7 +6,9 @@ the markdown version of the book.
 
 Files are edited at their respective repos and then imported here:
 
-`git submodule update --remote --merge`
+After cloningn this repo run: `git submodule update --init --recursive`
+
+After editing a file in a submodule run: `git submodule update --remote --merge`
 
 The source files are read from the `text` folder,
 which is a git submodule, ie a link to another repo.

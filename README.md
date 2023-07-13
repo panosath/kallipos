@@ -37,6 +37,7 @@ custom tags for figures, epigraphs, and file inclusion:
 * The figure filter should be called after everything has been included.
 * The custom tags are translated with lua filters to the desired output format (e.g., latex, html, docx), with [pandoc](https://pandoc.org).
 * Remove filters enable to clear unwanted tags and features.
+* The `pandoc-fignos` filter has not been updated yet to work with pandoc 3, but it does work with previous versions.
 
 ```
 pandoc --lua-filter=extras.lua text/mi-ch02.md --to markdown | pandoc --lua-filter=extras.lua --to markdown | pandoc --lua-filter=epigraph.lua --to markdown | pandoc --lua-filter=figure.lua --to markdown | less
